@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+*{
+    font-family: 'EB Garamond', serif;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+}
+.heading{
+    font-size: 3rem;
+    padding:2rem 0 0 0;
+    margin: 0;
+}
+.form-container{
+    height: 100vh;
+    background-image: url(./Images/3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+.main-form{
+    height: 100vh;
+    padding: 2rem 18rem 5rem 18rem;
+}
+.form-inner{
+    padding: 0.7rem 0;
+    background: linear-gradient(to bottom right, #a18cd1,#fc466b);
+    border: 2px solid black #a18cd1;
+    border-radius: 1rem;
+}
+input{
+    padding: 0.4rem 0.6rem;
+    border: 2px solid black;
+    border-radius: 1rem;
+}
+input:focus{
+    outline: none;
+}
+.ip-lg{
+    width: 15rem;
+}
+::placeholder{
+    color: black;
+}
+.f-size-lg{
+    font-size: 2rem;
+}
+.f-size-md{
+    font-size: 1.5rem;
+}
+.f-size-sm{
+    font-size: 1.1rem;
+}
+textarea{
+    padding: 0.5rem;
+    border: 2px solid black;
+    border-radius: 1rem;
+    resize: none;
+}
+textarea:focus{
+    outline: none;
+}
+.col-form-label-lg{
+    width: 30rem;
+}
+.size-sm{
+    width: 17rem;
+    margin-left: 0;
+}
+.custom-btn {
+    background: linear-gradient(to bottom right,#fc466b, #a18cd1);
+    border: 2px solid black;
+    color: black;
+    padding: 4px 6px;
+    border-radius: 1.2rem;
+}
+.ddown-menu{
+    background: #a18cd1;
+}
+.dropdown-item:hover{
+    background: #fc466b;
+}
+.sub-btn{
+    height: 2.5rem;
+    width: 6.5rem;
+    background: linear-gradient(to bottom right,#fc466b, #a18cd1);
+    border: 2px solid black;
+    border-radius: 1.5rem;
+}
+.sub-btn:hover{
+    color: white;
+    transition: 0.3s;
+}
+#lbl{
+    color: white;
+}
+.show>.btn-dark.dropdown-toggle:focus{
+    box-shadow: 0 0 0 0;
+}
+button:focus{
+    outline: none;
+}

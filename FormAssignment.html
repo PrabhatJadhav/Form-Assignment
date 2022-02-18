@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="FormAssignment.css">
+</head>
+
+<body>
+    <div class="container-fluid p-0 m-0 form-container">
+        <div class="container-fluid main-form">
+            <form class="container-fluid form form-inner d-flex flex-column align-items-center">
+                <div class="container mb-2 ml-5 pl-3">
+                    <p class="ml-5 f-size-lg text-left"><strong>Registration Form</strong></p>
+                </div>
+                <div class="form-group">
+                    <span>
+                        <input class="ip-lg" type="text" name="" id="fn" placeholder=" * First Name">
+                    </span>
+                    <span>
+                        <input class="ip-lg" type="text" name="" id="ln" placeholder=" * Last Name">
+                    </span>
+                </div>
+                <div class="form-group">
+                    <span>
+                        <input class="ip-lg" maxlength="64" type="email" name="" id="em" placeholder=" * Email">
+                    </span>
+                    <span>
+                        <input class="ip-lg" type="text" name="" id="pnum" placeholder="Contact Number">
+                    </span>
+                </div>
+                <div class="form-group">
+                    <span>
+                        <input class="ip-lg" type="password" id="p1" placeholder=" * Password">
+                    </span>
+                    <span>
+                        <input class="ip-lg" type="password" id="p2" placeholder=" * Confirm Password">
+                    </span>
+                </div>
+                <div class="form-group d-flex justify-content-center mb-0">
+                    <div class="addy d-flex p-1">
+                        <div class="mr-1 f-size-sm">
+                            Address 1:-
+                        </div>
+                        <div>
+                            <textarea class="" name="" id="" cols="17" rows="2"></textarea>
+                        </div>
+                    </div>
+                    <div class="addy d-flex p-1">
+                        <div class="mr-1 f-size-sm">
+                            Address 2:-
+                        </div>
+                        <div>
+                            <textarea class="" name="" id="" cols="17" rows="2"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group d-flex mb-2">
+                    <div class="container size-sm d-flex">
+                        <div>
+                            <p class="m-0 p-0 f-size-md text-right">
+                                <strong>* Select Gender</strong>
+                            </p>
+                        </div>
+                        <div class="dropdown ml-3">
+                            <button type="button" class="custom-btn btn-dark dropdown-toggle"
+                                data-toggle="dropdown">Click
+                                Here</button>
+                            <div class="ddown-menu dropdown-menu">
+                                <div class="dropdown-item">
+                                    <input class="" value="Male" name="gnd" type="radio">
+                                    <label for="">Male</label>
+                                </div>
+                                <div class="dropdown-item">
+                                    <input class="" value="Female" name="gnd" type="radio">
+                                    <label for="">Female</label>
+                                </div>
+                                <div class="dropdown-item">
+                                    <input class="" value="Other" name="gnd" type="radio">
+                                    <label for="">Other</label>
+                                </div>
+                                <div class="dropdown-item">
+                                    <input class="" value="Prefer Not To Say" name="gnd" type="radio">
+                                    <label for="">Prefer Not To Say</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="container size-sm d-flex">
+                            <div>
+                                <p class="m-0 p-0 f-size-md text-right">
+                                    <strong>* Select</strong>
+                                </p>
+                                <p class="m-0 p-0 f-size-md text-right"><strong>Plan</strong></p>
+                            </div>
+                            <div class="dropdown ml-3">
+                                <button type="button" class="custom-btn btn-dark dropdown-toggle"
+                                    data-toggle="dropdown">Click
+                                    Here</button>
+                                <div class="ddown-menu dropdown-menu">
+                                    <div class="dropdown-item">
+                                        <input class="" name="pln" value="Company Plan" type="radio">
+                                        <label for="">Company Plan</label>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <input class="" name="pln" value="Free Plan" type="radio">
+                                        <label for="">Free Plan</label>
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <input class="" name="pln" value="Premium Plan" type="radio">
+                                        <label for="">Premium Plan</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group m-0">
+                    <div>
+                        <button class="sub-btn f-size-sm" type="button"
+                            onclick="GetData()"><strong>Submit</strong></button>
+                    </div>
+                </div>
+                <div class="form-group align-items-center m-0">
+                    <label class="col-form-label-lg" id="lbl">Fields With ' * ' Are Compulsary</label>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- Custom JavaScript -->
+    <script src="FormAssignment.js"></script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
